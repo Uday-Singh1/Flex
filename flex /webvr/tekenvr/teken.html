@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src= "/aframescript.js"></script>
+   <script src= "/tekenvr/main.js" defer></script>
+    <title>Teken in VR</title>
+</head>
+<body>
+    <!--Alles in a-scene word VR !-->
+    <a-scene>
+        <a-camera>
+            <a-cursor id="js--cursor" color="black"></a-cursor>
+        </a-camera>
+        <!--eerste rij-->
+        <a-box class="js--box" position="0 2 -4" color="purple"></a-box>
+        <a-box class="js--box" position="1 2 -4" color="purple"></a-box>
+        <a-box class="js--box" position="-1 2 -4" color="purple"></a-box>
+        <a-box class="js--box" position="-1 2 -4" color="purple"></a-box>
+        <!--tweede rij-->
+        <a-box class="js--box"  position="-1 3 -4" color="purple"></a-box>
+        <a-box class="js--box"  position="0 3 -4" color="purple"></a-box>
+        <a-box class="js--box"  position="1 3 -4" color="purple"></a-box>
+        <a-box class="js--box"  position="1 3 -4" color="purple"></a-box>
+        
+        <!--derde rij-->
+        <a-box class="js--box" position="-1 1 -4" color="purple"></a-box>
+        <a-box class="js--box" position="0 1 -4" color="purple"></a-box>
+        <a-box class="js--box" position="1 1 -4" color="purple"></a-box>
+        <a-box class="js--box" position="1 1 -4" color="purple"></a-box>
+
+          <!--vierde rij-->
+  
+       
+        <!--sphere-->
+        <a-sphere class="js--sphere" position="-10 4 -3" color="red"></a-sphere>
+        <a-sphere class="js--sphere" position="-10 6 -3" color="blue"></a-sphere>
+        <a-sphere class="js--sphere" position="-10 -2 -3" color="green"></a-sphere>
+        
+        <a-sphere class="js--sphere" position="-10 0 -3" color="purple"></a-sphere>
+        <a-sphere class="js--sphere" position="-10 8 -3" color="yellow"></a-sphere>
+        <a-sphere class="js--sphere" position="-10 2 -3" color="black"></a-sphere>
+    </a-scene>
+</body>
+</html>

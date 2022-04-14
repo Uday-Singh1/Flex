@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="/aframescript.js"></script>
+   <script src="/minebox/mine.js" defer></script>
+    <title>Minebox</title>
+</head>
+<body>
+    <h2>Wood:   <span id="js--wood">0</span></h2>
+    <h2>gold:   <span id="js--gold">0</span></h2>
+    <a-scene>
+        <a-camera>
+            <a-cursor color="black">
+                <a-box id="js--item--grabbed" width="0.5" height="0.5" depth="0.5" color="red" position="0.5 0 0"></a-box>
+                <a-cone id="js--pickaxe--grabbed" color="gray" position="1.5 0 -1.5" rotation="-40 0 0" height="3"></a-cone>
+            </a-cursor>
+        </a-camera>
+        <a-box id="js--item" width="2" heigt="2" depth="2" color="red" position="0 1 -3"></a-box>
+        
+        <a-sphere class="js--sphere" color="yellow" position=" -2 -0.5 5"></a-sphere>
+        <a-sphere class="js--sphere" color="yellow" position=" 0 -0.5 5"></a-sphere>
+        <a-sphere class="js--sphere" color="yellow" position=" 2 -0.5 5"></a-sphere>
+        <a-plane width="20" height="37" color="#E4D1B9" position="0 0 0" rotation="-90 0 0"></a-plane>
+        
+        <!-- boom-->
+        <a-box class= "js--tree" color="brown" position="6 0.5 0"></a-box>
+        <a-box class= "js--tree" color="brown" position="6 1.5 0"></a-box>
+        <a-box class= "js--tree" color="brown" position="6 2.5 0"></a-box>
+        <a-box class= "js--tree" color="brown" position="6 3.5 0"></a-box>
+
+
+        <a-box class= "js--tree" color="green" position="6 4.5 0"></a-box>
+        <a-box class= "js--tree" color="green" position="6 4.5 1"></a-box>
+        <a-box class= "js--tree" color="green" position="6 4.5 -1"></a-box>
+
+        <a-box class= "js--tree" color="green" position="6 5.5 0.5"></a-box>
+        <a-box class= "js--tree" color="green"position="6 5.5 -0.5"></a-box>
+
+        <a-box class= "js--tree" color="green" position="6 6.5 0"></a-box>
+
+           <!-- Kasteel Grond -->
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 -0.4 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-8 -0.4 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-7 -0.4 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 -0.4 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 -0.4 -16"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-8 -0.4 -16"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-7 -0.4 -16"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 -0.4 -16"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 -0.4 -17"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-8 -0.4 -17"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-7 -0.4 -17"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 -0.4 -17"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 -0.4 -18"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-8 -0.4 -18"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-7 -0.4 -18"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 -0.4 -18"></a-box>
+        <!-- Kasteel Grond -->
+        <!-- Kasteel Muur(Voorkant) -->
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 0.6 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 0.6 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 1.6 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 1.6 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 2.6 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-8 2.6 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-7 2.6 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 2.6 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 3.6 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 4.6 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-7 3.6 -15"></a-box>
+
+        <!-- Kasteel Muur(Voorkant) -->
+        <!-- Kasteel Muur(Rechts) -->
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 0.6 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 0.6 -16"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 0.6 -17"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 0.6 -18"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 1.6 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 1.6 -16"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 1.6 -17"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 1.6 -18"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 2.6 -15"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 2.6 -16"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 2.6 -17"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 2.6 -18"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-6 3.6 -18"></a-box>
+        <!-- Kasteel Muur(Rechts) -->
+        <!-- Kasteel Muur(Achter) -->
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-7 0.6 -18"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-8 0.6 -18"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 0.6 -18"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-7 1.6 -18"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-8 1.6 -18"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 1.6 -18"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-7 2.6 -18"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-8 2.6 -18"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 2.6 -18"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 3.6 -18"></a-box>
+        <!-- Kasteel Muur(Achter) -->
+        <!-- Kasteel Muur(Links) -->
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 0.6 -17"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 0.6 -16"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 1.6 -17"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 1.6 -16"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 2.6 -17"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 2.6 -16"></a-box>
+        <a-box class="js--kasteel" width="1" height="1" depth="1" color="gold" position="-9 3.6 -15"></a-box>
+        <!-- Kasteel Muur(Links) -->
+        <!-- Kasteel deur -->
+        <a-box class="js--deur" width="0.2" height="1" depth="1" color="silver" position="-8.4 1.6 -15"></a-box>
+        <a-box class="js--deur" width="0.2" height="1" depth="1" color="silver" position="-8.4 0.6 -15"></a-box>
+        <a-box class="js--deur" width="0.2" height="1" depth="1" color="silver" position="-6.6 1.6 -15"></a-box>
+        <a-box class="js--deur" width="0.2" height="1" depth="1" color="silver" position="-6.6 0.6 -15"></a-box>
+        <!-- Kasteel Poort -->
+          
+         <!--pickaxe-->
+         <a-cone id="js--pickaxe" color="gray" position="-8 0.5 0" height="3"></a-cone>
+
+        <!-- Invisible Boxes -->
+        <a-box id="js--invisible-box"visible="false" color="red" width="1" height="1" depth="1"></a-box>
+    </a-scene>
+</body>
+</html>
