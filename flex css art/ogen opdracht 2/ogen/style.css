@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: #090910;
+    gap: 17px;
+}
+
+.eye{
+    width: 140px;
+    height: 260px;
+    background:white;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.4);
+    position: relative;
+    
+}
+
+.iris{
+    width: 80px;
+    height: 80px;
+    background:#7e5429;
+    background:  linear-gradient(rgb(241, 122, 142),40%,blue);
+    border-radius:50%;
+    position: relative;
+    border-radius: 50%;
+    position: absolute;
+    top:25%;
+    left:30%;
+}
+
+.pupil{
+    width:65%;
+    height:65%;
+    background:black;
+    border-radius:50%;
+}
+
+.shimer{
+    width: 30%;
+    height: 35%;
+    background: white;
+    border-radius: 50%;
+    position:absolute;
+    top: 10%;
+    left:18%;
+    transform: rotate(30deg);
+}
+
+.u-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

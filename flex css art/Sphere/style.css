@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --base-color: rgb(37, 186, 245);
+    --background-color: rgb(47, 77, 158);
+    --dark-base-color: hsl(231, 100%, 50%);
+    --heart-color: rgb(4, 33, 161);
+    --dark-base-color-shadow: rgba(0, 0, 0, 0.3);
+}
+
+body{
+    background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.sphere3D{
+    position: relative;
+}
+.sphere{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background: linear-gradient(var(--base-color),50%,var(--dark-base-color));
+   position: relative;
+   box-shadow:inset 0px 0px 25px 1px rgba(0,0,3,.4);
+}
+.heart{
+    top: 35%;
+    left: 50%;
+    position:absolute;
+    transform: rotate(45deg);
+}
+.block{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background: var(--heart-color);
+}
+.block--second{
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.block--third{
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.shadow{
+    width: 400px;
+    height: 100px;
+    background: var( --dark-base-color-shadow);
+    border-radius: 50%;
+    position: absolute;
+    top:110%;
+    left:50%;
+    transform: translateX(-50%);
+    filter:blur(10px);
+}

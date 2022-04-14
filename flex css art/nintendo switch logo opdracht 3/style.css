@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(90deg, #414548 50%, #989898 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switchLogo {
+    gap: 20px;
+    display: flex;
+}
+
+.joycon {
+    width: 90px;
+    height: 210px;
+    position: relative;
+}
+
+.joycon--left {
+    background:0 ;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 10px solid white;
+    animation-name: click--left;
+    animation-duration: 2.5s;
+}
+
+.joycon--Right {
+    background: #fff;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 0px solid white;
+    animation-name: click--right;
+    animation-duration: 2.5s;
+}
+
+.stick {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.stick--left {
+    background: black;
+    top: 15%;
+}
+
+.stick--Right {
+    background: #989898;
+    top: 51%;
+}
+
+@keyframes click--right {
+   0%{
+       transform: translateY(-80px);
+   }
+
+   93%{
+       transform: translateY(-80px);
+   }
+
+   98%{
+       transform: translateY(20px);
+   }
+   100%{
+       transform: translateY(0px); 
+   }
+}
+
+@keyframes click--left {
+   0%{
+       transform: translateY(0px);
+   }
+
+   93%{
+       transform: translateY(0px);
+   }
+
+   98%{
+       transform: translateY(20px);
+   }
+   100%{
+       transform: translateY(0px); 
+   }
+}
